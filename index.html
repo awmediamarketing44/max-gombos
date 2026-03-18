@@ -8,322 +8,343 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 </head>
 <body>
 
-    <!-- HERO -->
+    <!-- HERO — Full bleed image with overlay -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-layout">
-                <div class="hero-text">
-                    <p class="tag"><span class="accent">+</span> Conviction. Clarity. Confidence. No casualties.</p>
-                    <h1>Stop Grinding<br>Without<br>Direction.</h1>
-                    <p class="subtitle">I help young men build the structure, conviction, and coaching they've been missing. So they don't become another casualty of a sport that stays silent about the damage.</p>
-                    <a href="#apply" class="btn">Apply for Coaching</a>
-                </div>
-                <div class="hero-image">
-                    <img src="images-sm/hero.jpg" alt="Coach">
-                </div>
-            </div>
+        <div class="hero-bg">
+            <img src="images-sm/hero.jpg" alt="Coach posing">
+        </div>
+        <div class="grain"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-tagline" data-animate="fade-up"><span class="cross">+</span> Conviction. Clarity. Confidence. No casualties.</p>
+            <h1 class="hero-heading" data-animate="fade-up" data-delay="1">Stop Grinding<br>Without<br>Direction.</h1>
+            <p class="hero-sub" data-animate="fade-up" data-delay="2">I help young men build the structure, conviction, and coaching they've been missing. So they don't become another casualty of a sport that stays silent about the damage.</p>
+            <a href="#apply" class="btn-cta" data-animate="fade-up" data-delay="3">Apply for Coaching</a>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="4">
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- VSL -->
     <section class="vsl">
+        <div class="grain"></div>
         <div class="container">
-            <div class="vsl-box">
-                <div class="play-icon">&#9654;</div>
+            <div class="vsl-placeholder" data-animate="fade-up">
+                <div class="play-btn">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M20 12L0 24V0L20 12Z" fill="white"/></svg>
+                </div>
                 <p class="vsl-label">Watch the video</p>
             </div>
         </div>
     </section>
 
-    <!-- COACH IMAGE -->
-    <section class="img-section">
-        <div class="container">
-            <img src="images-sm/moody-bench.jpg" alt="Coach in gym" class="full-img">
-        </div>
-    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break" data-parallax>
+        <img src="images-sm/moody-bench.jpg" alt="Coach in gym">
+        <div class="grain"></div>
+    </div>
 
     <!-- THE GAP -->
-    <section class="section dark">
+    <section class="section-dark">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> The Gap You Can Feel</p>
-            <h2>You're in the gym. You care.<br>Something's still missing.</h2>
-            <div class="divider"></div>
-            <div class="list-items">
-                <div class="list-item">
-                    <span class="accent">+</span>
+            <p class="section-label" data-animate="fade-up"><span class="cross">+</span> The Gap You Can Feel</p>
+            <h2 class="section-heading" data-animate="fade-up">You're in the gym.<br>You care.<br>Something's still missing.</h2>
+            <div class="pain-list">
+                <div class="pain-item" data-animate="fade-up">
+                    <span class="cross">+</span>
                     <p>No real structure. No direction. Just grinding and guessing.</p>
                 </div>
-                <div class="list-item">
-                    <span class="accent">+</span>
+                <div class="pain-item" data-animate="fade-up">
+                    <span class="cross">+</span>
                     <p>One bad photo ruins your week. The mirror dictates your mood.</p>
                 </div>
-                <div class="list-item">
-                    <span class="accent">+</span>
+                <div class="pain-item" data-animate="fade-up">
+                    <span class="cross">+</span>
                     <p>All or nothing. One slip and you spiral.</p>
                 </div>
-                <div class="list-item">
-                    <span class="accent">+</span>
+                <div class="pain-item" data-animate="fade-up">
+                    <span class="cross">+</span>
                     <p>You carry all of it alone. The doubt gets louder every day.</p>
                 </div>
             </div>
-            <p class="closer-italic">The effort's there. The guidance isn't.</p>
+            <p class="closer-italic" data-animate="fade-up">The effort's there. The guidance isn't.</p>
         </div>
     </section>
 
     <!-- CASE STUDY 1 -->
-    <section class="section surface">
+    <section class="section-surface">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> Case Study</p>
+            <p class="case-label" data-animate="fade-up"><span class="cross">+</span> Case Study</p>
             <div class="case-layout">
-                <div class="case-media-col">
+                <div class="case-media" data-animate="fade-right">
                     <div class="placeholder tall">Results Image</div>
                     <div class="placeholder wide">Testimonial Video</div>
                 </div>
-                <div class="case-text-col">
-                    <h3>&ldquo;I stopped second-guessing everything.&rdquo;</h3>
-                    <p class="gray">No structure. No conviction. Spiralling after bad weeks. Within [timeframe], a physique he's proud of and the self-trust to back his own process.</p>
-                    <a href="#apply" class="btn btn--sm">Apply for Coaching</a>
+                <div class="case-text" data-animate="fade-left">
+                    <p class="case-quote">&ldquo;I stopped second-guessing everything.&rdquo;</p>
+                    <p class="case-desc">No structure. No conviction. Spiralling after bad weeks. Within [timeframe], a physique he's proud of and the self-trust to back his own process.</p>
+                    <a href="#apply" class="btn-cta btn-cta--sm">Apply for Coaching</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COACH IMAGE -->
-    <section class="img-section">
-        <div class="container">
-            <img src="images-sm/introspective.jpg" alt="Coach thinking" class="full-img">
-        </div>
-    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break--short" data-parallax>
+        <img src="images-sm/introspective.jpg" alt="Coach thinking">
+        <div class="grain"></div>
+        <div class="image-break-cross"><span class="cross cross--xl">+</span></div>
+    </div>
 
     <!-- WHAT NOBODY TALKS ABOUT -->
-    <section class="section dark">
+    <section class="section-dark">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> What Nobody Talks About</p>
-            <h2>The real cost isn't<br>sets and reps.</h2>
-            <p class="subtitle-section">It's what happens in your head when nobody's watching.</p>
-            <div class="card-grid">
-                <div class="card">
+            <p class="section-label" data-animate="fade-up"><span class="cross">+</span> What Nobody Talks About</p>
+            <h2 class="section-heading" data-animate="fade-up">The real cost isn't<br>sets and reps.</h2>
+            <p class="section-sub" data-animate="fade-up">It's what happens in your head when nobody's watching.</p>
+            <div class="truth-grid">
+                <div class="truth-card" data-animate="fade-up">
                     <span class="card-num">01</span>
                     <p>You know what to do. You can't make yourself do it.</p>
                 </div>
-                <div class="card">
+                <div class="truth-card" data-animate="fade-up" data-delay="1">
                     <span class="card-num">02</span>
                     <p>Fine on the outside. Falling apart underneath.</p>
                 </div>
-                <div class="card">
+                <div class="truth-card" data-animate="fade-up" data-delay="2">
                     <span class="card-num">03</span>
                     <p>Discipline is the only thing holding your identity together.</p>
                 </div>
-                <div class="card">
+                <div class="truth-card" data-animate="fade-up" data-delay="3">
                     <span class="card-num">04</span>
                     <p>Terrified of wasting your potential. Paralysed by fear of being seen.</p>
                 </div>
             </div>
-            <p class="closer-bold">You don't need another programme.<br>You need someone who sees the full picture.</p>
+            <p class="closer-bold" data-animate="fade-up">You don't need another programme.<br>You need someone who sees the full picture.</p>
         </div>
     </section>
 
     <!-- HOW THE COACHING WORKS -->
-    <section class="section surface">
+    <section class="section-surface">
+        <div class="grain"></div>
         <div class="container">
-            <div class="split-layout">
-                <div class="split-left">
-                    <p class="tag"><span class="accent">+</span> How The Coaching Works</p>
-                    <h2>Coaching that honours the process, the discipline, and the soul of the sport.</h2>
-                    <p class="gray">Every decision passes through two lenses. Physical and psychological. Both check out or it doesn't happen.</p>
+            <div class="method-split">
+                <div class="method-left" data-animate="fade-right">
+                    <p class="section-label"><span class="cross">+</span> How The Coaching Works</p>
+                    <h2 class="section-heading">Coaching that honours the process, the discipline, and the soul of the sport.</h2>
+                    <p class="method-intro">Every decision passes through two lenses. Physical and psychological. Both check out or it doesn't happen.</p>
                 </div>
-                <div class="split-right">
-                    <div class="method-row">
-                        <span class="card-num">01</span>
-                        <div>
-                            <h4>Assessment, not guesswork</h4>
-                            <p class="gray">Every layer reviewed. Nothing missed. No decisions on a single data point.</p>
+                <div class="method-right" data-animate="fade-left">
+                    <div class="method-item">
+                        <div class="method-header">
+                            <span class="card-num">01</span>
+                            <h3>Assessment, not guesswork</h3>
                         </div>
+                        <p>Every layer reviewed. Nothing missed. No decisions on a single data point.</p>
                     </div>
-                    <div class="method-row">
-                        <span class="card-num">02</span>
-                        <div>
-                            <h4>Minimum effective change</h4>
-                            <p class="gray">One variable at a time. Small. Targeted. Deliberate.</p>
+                    <div class="method-item">
+                        <div class="method-header">
+                            <span class="card-num">02</span>
+                            <h3>Minimum effective change</h3>
                         </div>
+                        <p>One variable at a time. Small. Targeted. Deliberate.</p>
                     </div>
-                    <div class="method-row">
-                        <span class="card-num">03</span>
-                        <div>
-                            <h4>Earned progression</h4>
-                            <p class="gray">Prove you can handle the current load first. Foundations before complexity.</p>
+                    <div class="method-item">
+                        <div class="method-header">
+                            <span class="card-num">03</span>
+                            <h3>Earned progression</h3>
                         </div>
+                        <p>Prove you can handle the current load first. Foundations before complexity.</p>
                     </div>
-                    <div class="method-row">
-                        <span class="card-num">04</span>
-                        <div>
-                            <h4>Pattern recognition, not panic</h4>
-                            <p class="gray">Trends matter. Single bad sessions don't.</p>
+                    <div class="method-item">
+                        <div class="method-header">
+                            <span class="card-num">04</span>
+                            <h3>Pattern recognition, not panic</h3>
                         </div>
+                        <p>Trends matter. Single bad sessions don't.</p>
                     </div>
                 </div>
             </div>
-            <p class="closer-italic">Coaching that builds understanding, not dependence.</p>
+            <p class="closer-italic" data-animate="fade-up">Coaching that builds understanding, not dependence.</p>
         </div>
     </section>
 
     <!-- CASE STUDY 2 -->
-    <section class="section dark">
+    <section class="section-dark">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> Case Study</p>
+            <p class="case-label" data-animate="fade-up"><span class="cross">+</span> Case Study</p>
             <div class="case-layout case-layout--reverse">
-                <div class="case-text-col">
-                    <h3>&ldquo;He changed how I think.&rdquo;</h3>
-                    <p class="gray">Overwhelmed. Eating emotionally. Hiding how he felt. The coaching addressed the person, not just the physique. The person changed. The physique followed.</p>
-                    <a href="#apply" class="btn btn--sm">Apply for Coaching</a>
-                </div>
-                <div class="case-media-col">
+                <div class="case-media" data-animate="fade-left">
                     <div class="placeholder tall">Results Image</div>
                     <div class="placeholder wide">Testimonial Video</div>
                 </div>
+                <div class="case-text" data-animate="fade-right">
+                    <p class="case-quote">&ldquo;He changed how I think.&rdquo;</p>
+                    <p class="case-desc">Overwhelmed. Eating emotionally. Hiding how he felt. The coaching addressed the person, not just the physique. The person changed. The physique followed.</p>
+                    <a href="#apply" class="btn-cta btn-cta--sm">Apply for Coaching</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- COACH IMAGE -->
-    <section class="img-section">
-        <div class="container">
-            <img src="images-sm/notes.jpg" alt="Coach writing notes" class="full-img">
-        </div>
-    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break" data-parallax>
+        <img src="images-sm/notes.jpg" alt="Coach writing notes">
+        <div class="grain"></div>
+    </div>
 
     <!-- WHAT'S INSIDE -->
-    <section class="section surface">
+    <section class="section-surface">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> What's Inside The Coaching</p>
-            <div class="card-grid">
-                <div class="card card--inside">
-                    <h4>Weekly check-in reviews</h4>
-                    <p class="gray">Training, nutrition, recovery, headspace. Full review. Recorded response. You always know the why.</p>
+            <p class="section-label" data-animate="fade-up"><span class="cross">+</span> What's Inside The Coaching</p>
+            <div class="inside-grid">
+                <div class="inside-card" data-animate="fade-up">
+                    <div class="inside-icon-ring">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </div>
+                    <h3>Weekly check-in reviews</h3>
+                    <p>Training, nutrition, recovery, headspace. Full review. Recorded response. You always know the why.</p>
                 </div>
-                <div class="card card--inside">
-                    <h4>Custom programming</h4>
-                    <p class="gray">Built for your structure, schedule, and capacity. Regular form analysis from footage.</p>
+                <div class="inside-card" data-animate="fade-up" data-delay="1">
+                    <div class="inside-icon-ring">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+                    </div>
+                    <h3>Custom programming</h3>
+                    <p>Built for your structure, schedule, and capacity. Regular form analysis from footage.</p>
                 </div>
-                <div class="card card--inside">
-                    <h4>Nutritional strategy</h4>
-                    <p class="gray">No rigid meal plans. Food as a tool, not a source of anxiety.</p>
+                <div class="inside-card" data-animate="fade-up" data-delay="2">
+                    <div class="inside-icon-ring">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Nutritional strategy</h3>
+                    <p>No rigid meal plans. Food as a tool, not a source of anxiety.</p>
                 </div>
-                <div class="card card--inside">
-                    <h4>A space to be honest</h4>
-                    <p class="gray">No judgement. What you share informs better decisions.</p>
+                <div class="inside-card" data-animate="fade-up" data-delay="3">
+                    <div class="inside-icon-ring">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+                    </div>
+                    <h3>A space to be honest</h3>
+                    <p>No judgement. What you share informs better decisions.</p>
                 </div>
             </div>
-            <p class="closer-bold">You're not buying a programme.<br>You're investing in someone who gives a shit.</p>
+            <p class="closer-bold" data-animate="fade-up">You're not buying a programme.<br>You're investing in someone who gives a shit.</p>
         </div>
     </section>
 
-    <!-- COACH IMAGE -->
-    <section class="img-section">
-        <div class="container">
-            <img src="images-sm/gym-stance.jpg" alt="Coach in gym" class="full-img">
-        </div>
-    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break--short" data-parallax>
+        <img src="images-sm/gym-stance.jpg" alt="Coach in gym">
+        <div class="grain"></div>
+    </div>
 
     <!-- THE PERSON YOU BECOME -->
-    <section class="section dark">
+    <section class="section-dark">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> The Person You Become</p>
-            <h2>No six-pack promises.<br>No timelines.</h2>
-            <p class="subtitle-section">The person transforms. The physique follows.</p>
-            <div class="divider"></div>
+            <p class="section-label" data-animate="fade-up"><span class="cross">+</span> The Person You Become</p>
+            <h2 class="section-heading" data-animate="fade-up">No six-pack promises.<br>No timelines.</h2>
+            <p class="section-sub" data-animate="fade-up">The person transforms. The physique follows.</p>
             <div class="become-list">
-                <div class="become-row">
+                <div class="become-item" data-animate="fade-up">
                     <div class="accent-line"></div>
                     <p>You stop needing validation. The doubt between check-ins gets replaced by understanding that holds up on its own.</p>
                 </div>
-                <div class="become-row">
+                <div class="become-item" data-animate="fade-up">
                     <div class="accent-line"></div>
                     <p>A bad week stops meaning a bad identity. One slip doesn't rewrite who you are.</p>
                 </div>
-                <div class="become-row">
+                <div class="become-item" data-animate="fade-up">
                     <div class="accent-line"></div>
                     <p>Food stops being the enemy. No more restriction-binge cycles. Just calm, deliberate eating.</p>
                 </div>
-                <div class="become-row">
+                <div class="become-item" data-animate="fade-up">
                     <div class="accent-line"></div>
                     <p>You carry yourself differently. Gym, work, relationships. Self-trust changes everything.</p>
                 </div>
             </div>
-            <p class="closer-bold">The physique is a byproduct. The person is the result.</p>
+            <p class="closer-bold" data-animate="fade-up">The physique is a byproduct. The person is the result.</p>
         </div>
     </section>
 
     <!-- CASE STUDY 3 -->
-    <section class="section surface">
+    <section class="section-surface">
+        <div class="grain"></div>
         <div class="container">
-            <p class="tag"><span class="accent">+</span> Case Study</p>
+            <p class="case-label" data-animate="fade-up"><span class="cross">+</span> Case Study</p>
             <div class="case-layout">
-                <div class="case-media-col">
+                <div class="case-media" data-animate="fade-right">
                     <div class="placeholder tall">Results Image</div>
                     <div class="placeholder wide">Testimonial Video</div>
                 </div>
-                <div class="case-text-col">
-                    <h3>&ldquo;I actually trust myself now.&rdquo;</h3>
-                    <p class="gray">Years of training. Knew the information. Couldn't execute. All-or-nothing. Shame after every slip. The coaching gave him structure, permission to be imperfect, and conviction in his own decisions.</p>
-                    <a href="#apply" class="btn btn--sm">Apply for Coaching</a>
+                <div class="case-text" data-animate="fade-left">
+                    <p class="case-quote">&ldquo;I actually trust myself now.&rdquo;</p>
+                    <p class="case-desc">Years of training. Knew the information. Couldn't execute. All-or-nothing. Shame after every slip. The coaching gave him structure, permission to be imperfect, and conviction in his own decisions.</p>
+                    <a href="#apply" class="btn-cta btn-cta--sm">Apply for Coaching</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COACH IMAGE -->
-    <section class="img-section">
-        <div class="container">
-            <img src="images-sm/mirror-front.jpg" alt="Coach posing" class="full-img">
-        </div>
-    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break" data-parallax>
+        <img src="images-sm/mirror-front.jpg" alt="Coach posing">
+        <div class="grain"></div>
+    </div>
 
     <!-- THIS ISN'T FOR EVERYONE -->
-    <section class="section dark">
+    <section class="section-dark">
+        <div class="grain"></div>
         <div class="container">
-            <h2 class="center">This Isn't For Everyone</h2>
-            <div class="filter-layout">
-                <div class="filter-col">
-                    <h4><span class="accent">+</span> For you if:</h4>
-                    <div class="filter-item">You've been training but never had real coaching. You're still at the start.</div>
-                    <div class="filter-item">You care about doing this properly.</div>
-                    <div class="filter-item">You want a coach who holds you to a standard.</div>
-                    <div class="filter-item">You're willing to be honest and trust the process.</div>
+            <h2 class="section-heading text-center" data-animate="fade-up">This Isn't For Everyone</h2>
+            <div class="filter-grid">
+                <div class="filter-col" data-animate="fade-right">
+                    <h3><span class="cross">+</span> For you if:</h3>
+                    <ul>
+                        <li>You've been training but never had real coaching. You're still at the start.</li>
+                        <li>You care about doing this properly.</li>
+                        <li>You want a coach who holds you to a standard.</li>
+                        <li>You're willing to be honest and trust the process.</li>
+                    </ul>
                 </div>
-                <div class="filter-col">
-                    <h4><span class="dim">&mdash;</span> Not for you if:</h4>
-                    <div class="filter-item">You want a quick fix or a drug protocol.</div>
-                    <div class="filter-item">You want a plan with no accountability.</div>
-                    <div class="filter-item">You treat bodybuilding as purely cosmetic.</div>
-                    <div class="filter-item">You won't be held to a standard.</div>
+                <div class="filter-col filter-col--no" data-animate="fade-left">
+                    <h3><span class="dim-marker">&mdash;</span> Not for you if:</h3>
+                    <ul>
+                        <li>You want a quick fix or a drug protocol.</li>
+                        <li>You want a plan with no accountability.</li>
+                        <li>You treat bodybuilding as purely cosmetic.</li>
+                        <li>You won't be held to a standard.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FINAL CTA -->
-    <section class="section-final">
-        <div class="container">
-            <div class="final-layout">
-                <div class="final-image">
-                    <img src="images-sm/mirror-side.jpg" alt="Coach">
-                </div>
-                <div class="final-text">
-                    <span class="accent large">+</span>
-                    <h2>The Sport<br>Doesn't Have<br>to Break You.</h2>
-                    <p class="gray">Most of the damage happens in the silence. The second-guessing. The shame. The slow erosion of self-belief.</p>
-                    <p class="gray">This coaching exists so that doesn't happen to you.</p>
-                    <a href="#apply" class="btn">Apply for Coaching</a>
-                    <p class="dim small">No commitment. No pressure. Just a conversation.</p>
-                </div>
-            </div>
+    <section class="section-final" id="apply">
+        <div class="final-bg">
+            <img src="images-sm/mirror-side.jpg" alt="Coach">
+        </div>
+        <div class="grain"></div>
+        <div class="final-overlay"></div>
+        <div class="container final-content">
+            <span class="cross cross--xl" data-animate="fade-up">+</span>
+            <h2 class="final-heading" data-animate="fade-up" data-delay="1">The Sport<br>Doesn't Have<br>to Break You.</h2>
+            <p class="final-text" data-animate="fade-up" data-delay="2">Most of the damage happens in the silence. The second-guessing. The shame. The slow erosion of self-belief.</p>
+            <p class="final-text" data-animate="fade-up" data-delay="2">This coaching exists so that doesn't happen to you.</p>
+            <a href="#apply" class="btn-cta" data-animate="fade-up" data-delay="3">Apply for Coaching</a>
+            <p class="final-note" data-animate="fade-up" data-delay="3">No commitment. No pressure. Just a conversation.</p>
         </div>
     </section>
 
+    <script src="app.js"></script>
 </body>
 </html>
